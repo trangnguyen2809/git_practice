@@ -9,10 +9,34 @@
 import time
 import pandas as pd
 import numpy as np
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
+
+MONTH_DATA = {
+    'january': 1,
+    'february': 2,
+    'march': 3,
+    'april': 4,
+    'may': 5,
+    'june': 6,
+    'all': -1
+}
+
+
+DAY_DATA = {
+    'monday': 'MONDAY',
+    'tuesday': 'TUESDAY',
+    'wednesday': 'WEDNESDAY',
+    'thursday': 'THURSDAY',
+    'friday': 'FRIDAY',
+    'saturday': 'SATURDAY',
+    'sunday': 'SUNDAY',
+    'all': 'ALL'
+}
 
 
 def get_filters():
